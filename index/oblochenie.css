@@ -1,0 +1,584 @@
+body
+{
+	margin:0;
+}
+
+.container /*черный фон*/
+{
+	background-color:#29386B;
+	height:100vh;
+}
+
+.game 
+{
+	display:flex;
+	justify-content:center;
+}
+
+.block /*тут находятся блок для иконок и девочки*/
+{
+	width: 1020px;
+	height: 602px;
+	padding-top:3%;
+	display:flex;
+	justify-content:space-around;
+}
+
+.for_girl /*белый блок для девочки*/
+{
+	background-color:#ffffff;
+	width: 277px;
+	height: 650px;
+	position:relative;
+	box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+}
+
+.for_icons /*белый блок для иконок*/
+{
+	background-color:#ffffff;
+	width: 288px;
+	height: 602px;
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	padding-top:2.6%;
+	padding-bottom:2.1%;
+	background-image:url('../фончег1.png');
+	box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+}
+
+.for_icons.results /*белый блок для результатов*/
+{
+	display: none;
+}
+
+.for_results_content /*текст рузультатов*/
+{
+	font-family: 'Montserrat', sans-serif;
+	border:1.5px solid #035080;  
+	color:#035080;
+	text-transform:uppercase;
+	font-size:24px;
+	text-decoration:none;
+	transition:background .1s linear, color .1s linear;
+	margin-left:6.5%;
+	margin-right:7%;
+	margin-top:5.5%;
+	text-align:center;
+	padding:38px 0px;
+}
+
+#game_results_content
+{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	line-height: 42px;
+	text-align: center;
+	color: #035080;
+	text-transform:none;
+}
+
+#character /*пероснаж*/
+{
+	z-index: 1;  
+	width:280px;
+	height:650px; 
+	display:block;
+	position:absolute;
+}
+
+.shirt
+{
+	visibility:hidden;
+	z-index: 3;
+}
+
+.pant
+{
+	visibility:hidden;
+    z-index: 2;
+}
+
+.par
+{
+	visibility:hidden;
+    z-index: 6;
+}
+	
+.hat
+{
+	visibility:hidden;
+    z-index: 7;
+}
+	
+.bum
+{
+	visibility:hidden;
+    z-index: 3;
+}
+	
+.bun
+{
+	visibility:hidden;
+    z-index:4;
+}	
+
+.far
+{
+	visibility:hidden;
+    z-index:5;
+}
+
+#top1 /*маечка1*/
+{
+
+	width:36.9%;
+	height:18.15%;
+	margin-left:33%; 
+	margin-top:50.5%;
+	display:block;
+	position:absolute;
+}
+
+#top2 /*рукавчеки*/
+{
+	width:74%;
+	height:27.53%;
+	margin-left:14.9%; 
+	margin-top:50.7%;
+	display:block;
+	position:absolute;
+}
+
+#top3 /*маечка2*/
+{
+	width:50%;
+	height:26.61%;
+	margin-left:25.5%; 
+	margin-top:50%;
+	display:block;
+	position:absolute;
+}
+
+#top4 /*маечка3*/
+{
+	width:36%;
+	height:20%;
+	margin-left:33%; 
+	margin-top:51.5%;
+	display:block;
+	position:absolute;
+}
+
+#top5 /*байка*/
+{
+	width:44%;
+	height:24.76%;
+	margin-left:30%; 
+	margin-top:50%;
+	display:block;
+	position:absolute;
+}
+
+#top6 /*маечка4*/
+{
+	width:47%;
+	height:28.76%;
+	margin-left:26.8%; 
+	margin-top:47.5%;
+	display:block;
+	position:absolute;
+}
+
+#top7 /*рукавчеки1*/
+{
+	width:81%;
+	height:32.30%;
+	margin-left:11.2%; 
+	margin-top:51%;
+	display:block;
+	position:absolute;
+}
+
+#top8 /*рубашка*/
+{
+	width:42%;
+	height:20.76%;
+	margin-left:30.9%; 
+	margin-top:49.5%;
+	display:block;
+	position:absolute;
+}
+
+#top9 /*спорт1*/
+{
+	width:49%;
+	height:19.38%;
+	margin-left:27%; 
+	margin-top:50.5%;
+	display:block;
+	position:absolute;
+}
+
+#top10 /*спорт2*/
+{
+	width:48%;
+	height:20%;
+	margin-left:27.2%; 
+	margin-top:52.4%;
+	display:block;
+	position:absolute;
+}
+
+#top11 /*спорт3*/
+{
+	width:55%;
+	height:22.15%;
+	margin-left:24%; 
+	margin-top:55%;
+	display:block;
+	position:absolute;
+}
+
+#top12 /*спорт4*/
+{
+	width:53%;
+	height:21.69%;
+	margin-left:26%; 
+	margin-top:54.3%;
+	display:block;
+	position:absolute;
+}
+
+#par1 /*парик1*/
+{
+	width:51%;
+	height:27.69%;
+	margin-left:26.7%; 
+	margin-top:13.5%;
+	display:block;
+	position:absolute;
+}
+
+#par5 /*парик5*/
+{
+	width:52.14%;
+	height:18.30%;
+	margin-left:25.3%; 
+	margin-top:13.6%;
+	display:block;
+	position:absolute;
+}
+#par2 /*парик2*/
+{
+	width:53.6%;
+	height:24%;
+	margin-left:25.3%; 
+	margin-top:7.7%;
+	display:block;
+	position:absolute;
+}
+
+#par3/*парик3*/
+{
+	width:77.5%;
+	height:32.46%;
+	margin-left:13.6%; 
+	margin-top:11%;
+	display:block;
+	position:absolute;
+}
+
+#bottom2 /*штаны*/
+{
+	width:60%;
+	height:46.76%;
+	margin-left:21.3%; 
+	margin-top:89%;
+	display:block;
+	position:absolute;
+}
+
+#par4 /*парик4*/
+{
+	width:37%;
+	height:20.15%;
+	margin-left:32.7%; 
+	margin-top:16.1%;
+	display:block;
+	position:absolute; 
+}
+
+#bottom1 /*юбка*/
+{
+	width:49%;
+	height:19.23%;
+	margin-left:26.9%; 
+	margin-top:91%;
+	display:block;
+	position:absolute;
+}
+
+#shoes1 /*туфли*/
+{
+	width:23.30%;
+	height:8.46%;
+	margin-left:40.1%; 
+	margin-top:201.5%;
+	display:block;
+	position:absolute;
+}
+
+#shoes2 /*туфли2*/
+{
+	width:23.30%;
+	height:8.46%;
+	margin-left:39.9%; 
+	margin-top:201.5%;
+	display:block;
+	position:absolute;
+}
+
+#shoes3 /*туфли3*/
+{
+	width:22%;
+	height:8.76%;
+	margin-left:40.4%; 
+	margin-top:201.5%;
+	display:block;
+	position:absolute;
+}
+
+#shoes4 /*туфли4*/
+{
+	width:25%;
+	height:9.84%;
+	margin-left:39.8%; 
+	margin-top:201.5%;
+	display:block;
+	position:absolute;
+}
+
+#shoes5 /*туфли5*/
+{
+	width:22%;
+	height:7.23%;
+	margin-left:40.5%; 
+	margin-top:200.5%;
+	display:block;
+	position:absolute;
+}
+
+#dress1 /*платье*/
+{
+	width:77.20%;
+	height:39.07%;
+	margin-left:12.9%; 
+	margin-top:51.62%;
+	display:block;
+	position:absolute;
+}
+
+#dress2 /*платье2*/
+{
+	width:53%;
+	height:38.92%;
+	margin-left:25.5%; 
+	margin-top:54.8%;
+	display:block;
+	position:absolute;
+}
+
+#dress3 /*платье3*/
+{
+	width:53.5%;
+	height:40.76%;
+	margin-left:25.5%; 
+	margin-top:53.5%;
+	display:block;
+	position:absolute;
+}
+
+#dress4 /*костюм1*/
+{
+	width:83%;
+	height:65.53%;
+	margin-left:5.8%; 
+	margin-top:51.8%;
+	display:block;
+	position:absolute;
+}
+
+#dress5 /*платье5*/
+{
+	width:50%;
+	height:41.23%;
+	margin-left:26%; 
+	margin-top:52.7%;
+	display:block;
+	position:absolute;
+}
+
+#bottom3 /*юбочка*/
+{
+	width:58%;
+	height:16.92%;
+	margin-left:23.8%; 
+	margin-top:91%;
+	display:block;
+	position:absolute;
+}
+
+#bottom4 /*юбка2*/
+{
+	width:47%;
+	height:20.30%;
+	margin-left:27.9%; 
+	margin-top:92%;
+	display:block;
+	position:absolute;
+}
+
+#bottom5 /*клёш*/
+{
+	width:64%;
+	height:40.15%;
+	margin-left:19.23%; 
+	margin-top:91%;
+	display:block;
+	position:absolute;
+}
+
+#bottom6 /*спорт6*/
+{
+	width:45%;
+	height:36.30%;
+	margin-left:29%; 
+	margin-top:91%;
+	display:block;
+	position:absolute;
+}
+
+#bottom7 /*спорт5*/
+{
+	width:41%;
+	height:21.53%;
+	margin-left:31%; 
+	margin-top:90%;
+	display:block;
+	position:absolute;
+}
+
+#jacket2 /*пальто*/
+{
+	width:69%;
+	height:46.15%;
+	margin-left:16.8%; 
+	margin-top:51.3%;
+	display:block;
+	position:absolute;
+}
+
+#jacket3 /*куртка*/
+{
+	width:69%;
+	height:30%;
+	margin-left:17.3%; 
+	margin-top:51.5%;
+	display:block;
+	position:absolute;
+}
+
+#jacket4 /*курточка*/
+{
+	width:68.21%;
+	height:39.23%;
+	margin-left:17.2%; 
+	margin-top:52.4%;
+	display:block;
+	position:absolute;
+}
+
+#jacket5 /*пальтишко*/
+{
+	width:68%;
+	height:43.38%;
+	margin-left:17.6%; 
+	margin-top:51.2%;
+	display:block;
+	position:absolute;
+}
+
+#hat1 /*обруч*/
+{
+	width:26.9%;
+	height:3.84%;
+	margin-left:37.7%; 
+	margin-top:20%;
+	display:block;
+	position:absolute;
+}
+
+#hat2 /*обруч1*/
+{
+	width:31%;
+	height:10.15%;
+	margin-left:39.5%; 
+	margin-top:7%;
+	display:block;
+	position:absolute;
+}
+
+/*размер иконок*/
+.imaages
+{
+	width:110px;
+	height:110px;
+	display: flex;
+	margin-left:13%;
+	margin-top:10%;
+}
+
+.imaages1
+{
+	width:110px;
+	height:110px;
+	display: flex;
+	margin-left:13%;
+	margin-top:40%;
+	margin-bottom:10%;
+}
+
+ /*кнопка далее*/
+.btm
+{
+	font-family: 'Montserrat', sans-serif;
+	border:1.5px solid #035080;  
+	color:#035080;
+	text-decoration:none;
+	transition:background .1s linear, color .1s linear;
+	margin-left:6.5%;
+	margin-right:5%;
+	margin-top:5.5%;
+	text-align:center;
+	padding:41.5px 0px;
+	font-size: 18px;
+}
+
+.btm:hover
+{
+	background-color:#035080;
+	color:#ffffff;
+}
+
+.for_icons_ /*белый блок для иконок*/
+{
+
+	width: 288px;
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	padding-top:2.6%;
+	padding-bottom:2.1%;
+}

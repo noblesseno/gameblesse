@@ -1,0 +1,504 @@
+body
+{
+	margin:0;
+}
+
+.container /*черный фон*/
+{
+	background-color:#29386B;
+	height:100vh;
+}
+
+.game 
+{
+	display:flex;
+	justify-content:center;
+}
+
+.block /*тут находятся блок для иконок и девочки*/
+{
+	width: 1020px;
+	height: 602px;
+	padding-top:3%;
+	display:flex;
+	justify-content:space-around;
+}
+
+.for_boy /*белый блок для девочки*/
+{
+	background-color:#ffffff;
+	width: 277px;
+	height: 650px;
+	position:relative;
+	box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+}
+
+.for_icons /*белый блок для иконок*/
+{
+	background-color:#ffffff;
+	width: 288px;
+	height: 602px;
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	padding-top:2.6%;
+	padding-bottom:2.1%;
+	box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+	background-image:url('../фончег1.png');
+}
+
+.for_icons.results /*белый блок для результатов*/
+{
+	display: none;
+}
+
+.for_results_content /*текст рузультатов*/
+{
+	font-family: 'Montserrat', sans-serif;
+	border:1.5px solid #035080;  
+	color:#035080;
+	text-transform:uppercase;
+	font-size:24px;
+	text-decoration:none;
+	transition:background .1s linear, color .1s linear;
+	margin-left:6.5%;
+	margin-right:7%;
+	margin-top:5.5%;
+	text-align:center;
+	padding:38px 0px;
+}
+
+#game_results_content
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	line-height: 42px;
+	text-align: center;
+	color: #035080;
+	text-transform:none;
+}
+
+#character /*пероснаж*/
+{
+	z-index: 1;  
+	width:250px;
+	height:650px; 
+	display:block;
+	position:absolute;
+	margin-left:5.5%;
+}
+
+.shirt
+{
+	visibility:hidden;
+	z-index: 4;
+}
+
+.pant
+{
+	visibility:hidden;
+    z-index: 3;
+}
+
+.par
+{
+	visibility:hidden;
+    z-index: 6;
+}
+	
+.glo
+{
+	visibility:hidden;
+    z-index: 7;
+}
+	
+.bum
+{
+	visibility:hidden;
+    z-index: 2;
+}
+	
+.bun
+{
+	visibility:hidden;
+    z-index:4;
+}	
+
+.far
+{
+	visibility:hidden;
+    z-index:7;
+}
+
+#top1 /*рубашка1*/
+{
+	width:72%;
+	height:35%;
+	margin-left:12.5%; 
+	margin-top:37%;
+	display:block;
+	position:absolute;
+}
+
+#top2 /*рубашка2*/
+{
+	width:67.5%;
+	height:35.69%;
+	margin-left:14.9%; 
+	margin-top:35.8%;
+	display:block;
+	position:absolute;
+}
+
+#top3 /*рубашка3*/
+{
+	width:71%;
+	height:35.69%;
+	margin-left:12.8%; 
+	margin-top:33.5%;
+	display:block;
+	position:absolute;
+}
+
+#top4 /*рубашка4*/
+{
+	width:69.5%;
+	height:35.69%;
+	margin-left:14.9%; 
+	margin-top:37%;
+	display:block;
+	position:absolute;
+}
+
+#top5 /*рубашка5*/
+{
+	width:70%;
+	height:34%;
+	margin-left:13.8%; 
+	margin-top:41.3%;
+	display:block;
+	position:absolute;
+}
+
+#top6 /*рубашка6*/
+{
+	width:54%;
+	height:34.30%;
+	margin-left:22.6%; 
+	margin-top:33%;
+	display:block;
+	position:absolute;
+}
+
+#top7 /*рубашка7*/
+{
+	width:72%;
+	height:35%;
+	margin-left:12.5%; 
+	margin-top:36.7%;
+	display:block;
+	position:absolute;
+}
+
+#top8 /*рубашка8*/
+{
+	width:72%;
+	height:35%;
+	margin-left:13.4%; 
+	margin-top:37.9%;
+	display:block;
+	position:absolute;
+}
+
+#top9 /*рубашка9*/
+{
+	width:72%;
+	height:35%;
+	margin-left:13.6%; 
+	margin-top:37.9%;
+	display:block;
+	position:absolute;
+}
+
+#top10 /*рубашка8*/
+{
+	width:76%;
+	height:35%;
+	margin-left:11.4%; 
+	margin-top:37.8%;
+	display:block;
+	position:absolute;
+}
+
+#top11 /*спорт2*/
+{
+	width:55%;
+	height:30%;
+	margin-left:22%; 
+	margin-top:41.5%;
+	display:block;
+	position:absolute;
+}
+
+#par1 /*парик1*/
+{
+	width:25.85%;
+	height:12.5%;
+	margin-left:36.3%; 
+	margin-top:0%;
+	display:block;
+	position:absolute;
+}
+
+#par2 /*парик2*/
+{
+	width:37%;
+	height:13.69%;
+	margin-left:30.5%; 
+	margin-top:0.5%;
+	display:block;
+	position:absolute;
+}
+
+#par3 /*парик3*/
+{
+	width:32%;
+	height:12%;
+	margin-left:33.15%; 
+	margin-top:2.5%;
+	display:block;
+	position:absolute;
+}
+
+#par4 /*парик4*/
+{
+	width:34%;
+	height:11.23%;
+	margin-left:32.4%; 
+	margin-top:4%;
+	display:block;
+	position:absolute;
+}
+
+#bottom1 /*штаны1*/
+{
+	width:55%;
+	height:52%;
+	margin-left:24.5%; 
+	margin-top:92%;
+	display:block;
+	position:absolute;	
+}
+
+#bottom2 /*штаны2*/
+{
+	width:63%;
+	height:52.46%;
+	margin-left:17.8%; 
+	margin-top:92%;
+	display:block;
+	position:absolute;	
+}
+
+#bottom3 /*штаны3*/
+{
+	width:51%;
+	height:54.5%;
+	margin-left:24%; 
+	margin-top:92%;
+	display:block;
+	position:absolute;	
+}
+
+#bottom4 /*штаны4*/
+{
+	width:46%;
+	height:24%;
+	margin-left:27%; 
+	margin-top:92.5%;
+	display:block;
+	position:absolute;	
+}
+
+#shoes1 /*обувь1*/
+{
+	width:47%;
+	height:9.38%;
+	margin-left:26.2%; 
+	margin-top:206%;
+	display:block;
+	position:absolute;	
+}
+
+#shoes2 /*обувь2*/
+{
+	width:46%;
+	height:7.53%;
+	margin-left:28.3%; 
+	margin-top:209%;
+	display:block;
+	position:absolute;	
+}
+
+#dress1 /*костюм1*/
+{
+	width:80%;
+	height:78.5%;
+	margin-left:10%; 
+	margin-top:33%;
+	display:block;
+	position:absolute;
+}
+
+#dress2 /*костюм2*/
+{
+	width:90%;
+	height:82%;
+	margin-left:4%; 
+	margin-top:30%;
+	display:block;
+	position:absolute;
+}
+
+#dress3 /*костюм3*/
+{
+	width:82.2%;
+	height:81%;
+	margin-left:8.6%; 
+	margin-top:33%;
+	display:block;
+	position:absolute;
+}
+
+#dress4 /*костюм4*/
+{
+	width:90%;
+	height:83%;
+	margin-left:4.6%; 
+	margin-top:26.4%;
+	display:block;
+	position:absolute;
+}
+
+#bike1 /*кофта4*/
+{
+	width:68%;
+	height:31.69%;
+	margin-left:15%; 
+	margin-top:41.4%;
+	display:block;
+	position:absolute;
+}
+
+#bike2 /*кофта*/
+{
+	width:72%;
+	height:33%;
+	margin-left:12%; 
+	margin-top:41.5%;
+	display:block;
+	position:absolute;
+}
+
+#bike3 /*байка*/
+{
+	width:74%;
+	height:34.15%;
+	margin-left:12.7%; 
+	margin-top:38%;
+	display:block;
+	position:absolute;
+}
+
+#bike4 /*байка2*/
+{
+	width:74%;
+	height:34.15%;
+	margin-left:13%; 
+	margin-top:38%;
+	display:block;
+	position:absolute;
+}
+
+#jacket1 /*жилетка*/
+{
+	width:48.8%;
+	height:30.30%;
+	margin-left:24.5%; 
+	margin-top:42%;
+	display:block;
+	position:absolute;
+}
+
+#jacket2 /*пиджак1*/
+{
+	width:70%;
+	height:34.7%;
+	margin-left:14.4%; 
+	margin-top:36.7%;
+	display:block;
+	position:absolute;
+}
+
+#jacket3 /*пиджак3*/
+{
+	width:74%;
+	height:34.7%;
+	margin-left:12%; 
+	margin-top:39.1%;
+	display:block;
+	position:absolute;
+}
+
+/*размер иконок*/
+.imaages
+{
+	width:110px;
+	height:110px;
+	display: flex;
+	margin-left:13%;
+	margin-top:10%;
+}
+
+.imaages1
+{
+	width:110px;
+	height:110px;
+	display: flex;
+	margin-left:13%;
+	margin-top:40%;
+	margin-bottom:10%;
+}
+
+ /*кнопка далее*/
+.btm
+{
+	font-family: 'Montserrat', sans-serif;
+	border:1.5px solid #035080;  
+	color:#035080;
+	text-decoration:none;
+	transition:background .1s linear, color .1s linear;
+	margin-left:6.5%;
+	margin-right:5%;
+	margin-top:5.5%;
+	text-align:center;
+	padding:41.5px 0px;
+	font-size: 18px;
+}
+
+.btm:hover
+{
+	background-color:#035080;
+	color:#ffffff;
+}
+
+.for_icons_ /*белый блок для иконок*/
+{
+
+	width: 288px;
+	display: flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+	padding-top:2.6%;
+	padding-bottom:2.1%;
+}
